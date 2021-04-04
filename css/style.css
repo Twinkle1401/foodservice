@@ -1,0 +1,231 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+display: flex;
+position: sticky;
+align-items: center;
+font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4
+    }
+
+#logo{
+    margin: 10px 7px;
+    padding: 0px 0px;
+}
+
+#logo img{
+    /* margin:10px 10px; */
+    padding: 0px 12px;
+    height:40px;
+    width:40px;
+}
+
+#navbar ul{
+    display:flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    
+    /* margin: 23px 40px; */
+
+}
+#navbar ul li a{
+    display: block;
+    margin: 15px 23px;
+    padding: 3px 4px;
+    border-radius : 7px;
+   text-decoration: none;
+    color:white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+    
+    
+}
+  
+#home{
+    display: flex;
+    flex-direction: column;
+    margin: 41px 15px;
+
+    padding: 2px 200px;
+/* height: 280px; */
+height: 180px;
+justify-content: center;
+align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../images/pexels-kaboompics-com-5929.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.77
+}
+
+#home h3{
+    color: white;
+    margin: 17px 12px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+.h-primary{
+    font-size: 33px;
+    margin: 0px;
+    padding: 35px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 25px;
+    padding: 18px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;s
+}
+
+.btn{
+    padding: 5px 17px;
+    border: 2px solid white;
+    background-color: rgb(116, 96, 96);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 12px 4px;
+    cursor:pointer;
+}
+
+#services{
+    margin: 0px 5px;
+    /* padding: 0px; */
+    display: flex;
+}
+
+
+#services-container{
+    margin: 15px 15px;
+    /* padding: 20px; */
+}
+
+#services .box{
+    margin: 5px 20px;
+    padding: 21px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    height: 422px;
+    background-color: rgb(245, 243, 243);
+}
+
+#services .box img{
+    height: 204px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+.clients{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 137px;
+}
+
+.clients::before{
+    content: "";
+    background: url('../images/pexels-ella-olsson-1640777.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 354px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.3;
+}
+
+.clients-item{
+padding: 34px;
+}
+
+.clients-item img{
+    height: 107px;
+}
+
+#contact{
+    position: relative;
+    height: 520px;
+    margin-top: 109px;
+}
+
+#contact::before{
+    content: "";
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.3;
+}
+
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+height: 336px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+#contact-box form{
+width: 40%;
+/* padding-bottom: 25px; */
+}
+
+#contact-box label{
+    font-size: 17px;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
